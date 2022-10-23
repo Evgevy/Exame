@@ -1,0 +1,96 @@
+.wrapper {
+    &__content {
+        max-width: 595px;
+        padding: 10px;
+        margin: 0 auto;
+        background: linear-gradient(180deg, #7000FF 0%, #FF0000 100%);
+    }
+    
+}
+
+.basic {
+    &__content {
+        max-width: 290px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+
+
+    &__name {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: px-to-em(36);
+        line-height: 125%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    &__prof {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: px-to-em(15);
+        line-height: 121%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__about {
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+        margin-top: 80px;
+        padding: 86px 13px 16px 14px;
+        background: rgba(255, 255, 255, 0.2);
+        
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: px-to-em(15);
+        line-height: 113%;
+        text-align: left;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 7px;
+    }
+
+    &__textone {
+        font-family: 'Roboto';
+        font-size: px-to-em(13);
+        line-height: 115%;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+
+    &__contacts {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__cont {
+        display: flex;
+        text-decoration: none;
+        justify-content: start;
+        padding: 15px;
+        gap: 20px;
+        font-family: 'Roboto';
+        font-size: px-to-em(14);
+        line-height: 114%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+    }
+
+   
+
+
+  
+}
