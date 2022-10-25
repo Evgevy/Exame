@@ -3,6 +3,8 @@
         max-width: 595px;
         padding: 10px;
         margin: 0 auto;
+        display: flex;
+        gap: 5px;
         background: linear-gradient(180deg, #7000FF 0%, #FF0000 100%);
     }
     
@@ -10,8 +12,8 @@
 
 .basic {
     &__content {
-        max-width: 290px;
-        padding: 15px;
+        max-width: 250px;
+        padding: 17px 0 25px;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 5px;
     }
@@ -48,7 +50,7 @@
         
     }
 
-    &__title {
+    &__titleone {
         font-family: 'Roboto';
         font-weight: 700;
         font-size: px-to-em(15);
@@ -72,16 +74,17 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding: 10px;
     }
 
     &__cont {
         display: flex;
         text-decoration: none;
-        justify-content: start;
-        padding: 15px;
-        gap: 20px;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
         font-family: 'Roboto';
-        font-size: px-to-em(14);
+        font-size: px-to-em(13);
         line-height: 114%;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -89,8 +92,64 @@
         border-radius: 50px;
     }
 
-   
+    &__cont:hover {
+        svg {
+            path {
+                fill: aqua;
+            }
+        }
+    }
 
+    &__lang {
+        padding-left: 15px;
+    }
 
-  
+    &__title {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: px-to-em(16);
+        line-height: 118%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 28px 0 15px;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: 'Roboto';
+        font-size: px-to-em(14);
+        line-height: 114%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+
+    &__languages {
+        max-width: 58px;
+        width: 100%;
+        margin-right: 7px;
+    }
+
+    &__rating {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #FFFFFF;
+        background: #FFFFFF;
+        border-radius: 50%;
+        &--clear {
+            background: none;
+        }
+    }
+}
+
+.aside {
+    &__content {
+        width: 325px;
+        padding: 22px 5px 16px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        margin: 0;
+    }
 }
