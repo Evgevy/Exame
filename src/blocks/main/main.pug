@@ -1,0 +1,12 @@
+mixin main(cl)
+  main(class=`${cl ? cl + '__basic' : ''}`).basic
+    .basic__content
+      .basic__info
+        h1.basic__name Your Name
+        .basic__prof ui/ux designer
+      .basic__about
+        img().basic__image
+        h2.basic__titleone about me
+        p.basic__textone Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      +contacts
+      +lang

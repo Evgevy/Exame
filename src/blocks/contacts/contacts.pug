@@ -1,0 +1,19 @@
+mixin contacts(cl)
+  div(class=`${cl ? cl + '__contacts' : ''}`).contacts
+    .contacts__contacts 
+        .contacts__contact 
+          a(href="tel:+79992386474").contacts__cont
+            include img/fone.svg       
+            p.contacts__text +7 999 238 64 74
+        .contacts__contact 
+          a(href="mailto:name@website.com").contacts__cont
+            include img/email.svg 
+            p.contacts__text name@website.com
+        .contacts__contact 
+          a(href="http://www.website.com").contacts__cont
+            include img/website.svg
+            p.contacts__text www.website.com
+        .contacts__contact 
+          a(href="#!").contacts__cont
+            include img/home.svg
+            p.contacts__text street no #0, city

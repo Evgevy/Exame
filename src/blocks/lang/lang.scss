@@ -1,0 +1,45 @@
+.lang {
+    &__lang {
+        padding-left: 15px;
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: px-to-em(16);
+        line-height: 118%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 28px 0 15px;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: 'Roboto';
+        font-size: px-to-em(14);
+        line-height: 114%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+
+    &__languages {
+        max-width: 58px;
+        width: 100%;
+        margin-right: 7px;
+    }
+
+    &__rating {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #FFFFFF;
+        background: #FFFFFF;
+        border-radius: 50%;
+        &--clear {
+            background: none;
+        }
+    }
+  
+}
