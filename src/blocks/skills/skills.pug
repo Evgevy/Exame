@@ -1,0 +1,27 @@
+mixin skills(cl)
+  aside(class=`${cl ? cl + '__skills' : ''}`).skills
+    .skills__content
+      .skills__prev 
+        h2.skills__title My skills
+        .skills__line
+      .skills__skills 
+        .skills__skill 
+          .pie.animate.no-round(style="--p: 80;")
+            .skills__image
+              include img/photoshop.svg
+          p.skills__text Adobe Photoshop
+        .skills__skill
+          .pie.animate.no-round(style="--p: 68;")
+            .skills__image
+              include img/adillustrator.svg
+          p.skills__text Adobe Illustrator
+        .skills__skill 
+          .pie.animate.no-round(style="--p: 65;")
+            .skills__image
+              img(src="img/indesign.png")
+          p.skills__text Adobe InDesign
+        .skills__skill 
+          .pie.animate.no-round(style="--p: 59;")
+            .skills__image
+              img(src="img/XD.png")
+          p.skills__text Adobe XD

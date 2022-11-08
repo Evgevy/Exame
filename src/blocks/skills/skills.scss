@@ -1,0 +1,119 @@
+.skills {
+    &__content {
+        width: 286px;
+        margin: 0;
+    }
+
+    &__prev {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: px-to-em(16);
+        line-height: 118%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #DE0F16;
+        border-radius: 50px;
+        max-width: 150px;
+        padding: 8px 25px;
+    }
+
+    &__line {
+        width: 148px;
+        background: #DE0F16;
+        height: 2px;
+    }
+
+    &__skills {
+        padding: 21px 30px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80px;
+        height: auto;
+    }
+
+    .pie {
+        --c: #DE0F16;
+        --b: 2px;
+        --w: 40px;
+        width: var(--w);
+        aspect-ratio: 1;
+        position :relative;
+        display: inline-grid;
+        margin: 5px;
+        place-content: center;
+        font-size: 25px;
+    }
+
+    .animate  {
+        animation: p 1s .5s both;
+        
+    }
+
+    .pie:before,
+    .pie:after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+    }
+    
+    .pie:before {
+        inset: 0;
+        background: radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+        //-webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+        mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+    }
+
+    .pie:after {
+        inset: calc(50% - var(--b)/2);
+        background: var(--c);
+        transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+    }
+
+    .no-round:before {
+        background-size: 0 0, auto;
+    }
+
+    .no-round:after {
+        content: none;
+    }
+
+    @keyframes p {
+        from{--p: 0}
+    }
+
+    &__image {
+        background-color: #F0ECEC;
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-size: px-to-em(11);
+        line-height: 120%;
+        text-transform: capitalize;
+        color: #847D7D;
+        text-align: left;
+       
+    }
+  
+}

@@ -1,0 +1,19 @@
+mixin hobbi(cl)
+  aside(class=`${cl ? cl + '__hobbi' : ''}`).hobbi
+    .hobbi__content 
+      .hobbi__prev
+        h2.hobbi__title Hobbies
+        .hobbi__line
+      .hobbi__hobbis 
+        .hobbi__hobbi 
+          include img/books.svg
+          p.hobbi__text Reading Books
+        .hobbi__hobbi 
+          include img/ball.svg
+          p.hobbi__text Basket Ball
+        .hobbi__hobbi 
+          include img/men.svg
+          p.hobbi__text Hiking
+        .hobbi__hobbi 
+          include img/music.svg
+          p.hobbi__text Listen Music
