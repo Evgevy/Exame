@@ -1,9 +1,12 @@
 .basic {
+   
     &__content {
         max-width: 250px;
+        width: 100%;
         padding: 17px 0 25px;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 5px;
+        
     }
 
 
@@ -59,5 +62,56 @@
         color: #FFFFFF;
     }
 
-  
+    &__burger {
+        display: none;
+    }
+
+    @media screen and (max-width: 605px) {
+        
+        &__content {
+            max-width: 450px;
+            
+        }
+
+        &__burger {
+            width: 40px;
+            height: 40px;
+            @include flex-dir;
+        }
+
+        &__line {
+            transition: all 0.3s;
+            height: 4px;
+            background-color: #000000;
+            display: block;
+            width: 30px;
+            margin: 3px;
+        }
+
+        &__line {
+            &--first {
+            transform: translate(6px, -1px) rotate(45deg);
+            transform-origin: left top;
+            height: 3px;
+            }
+        }
+
+        &__line {
+            &--middle {
+                scale: (0);
+            }
+        }
+
+        &__line {
+            &--last {
+                transform: translate(-3px, -20px) rotate(-45deg);
+                transform-origin: right bottom;
+                height: 3px;
+            }
+        }
+
+        &__name {
+            margin-top: -45px;
+        }
+    }
 }

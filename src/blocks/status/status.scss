@@ -1,0 +1,68 @@
+.status {
+    &__titles {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: px-to-em(16);
+        line-height: 118%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #DE0F16;
+        border-radius: 50px;
+        max-width: 140px;
+        width: 100%;
+        padding: 8px 25px;
+    }
+
+    &__line {
+        min-width: 135px;
+        background: #DE0F16;
+        height: 2px;
+    }
+
+    &__arrow {
+        display: none;
+    }
+
+    @media screen and (max-width: 605px) {
+        &__titles {
+            padding: 10px 0;
+        }
+
+        &__title {
+           max-width: 410px;
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__arrow {
+            display: block;
+            transform: translateX(-30px);
+            pointer-events: none;
+            transition: .2s;
+            svg {
+                width: 25px;
+                height: 25px;
+                path {
+                    fill: #FFFFFF;
+                }
+            }
+            &--open {
+                transform: rotate(-180deg) translate(30px, 5px);
+            }
+        }
+
+       
+        
+    }
+  
+}

@@ -1,31 +1,7 @@
 .hobbi {
     &__content {
-        width: 307px;
-        margin: 0;
-    }
-
-    &__prev {
-        display: flex;
-        align-items: center;
-    }
-
-    &__title {
-        font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        background: #DE0F16;
-        border-radius: 50px;
-        padding: 8px 35px;
-        max-width: 150px;
-    }
-
-    &__line {
-        width: 148px;
-        background: #DE0F16;
-        height: 2px;
+        max-width: 286px;
+        width: 100%;
     }
 
     &__hobbis {
@@ -61,6 +37,21 @@
             path {
                 fill: plum;
             }
+        }
+    }
+
+    @media screen and (max-width: 605px) {
+        &__hobbis {
+            display: none;
+            &--open {
+                display: flex;
+                padding: 10px 16px 10px 0;
+                
+            }
+        }
+
+        &__content {
+            max-width: 450px;
         }
     }
   

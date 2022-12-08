@@ -21,6 +21,7 @@
         background: rgba(255, 255, 255, 0.2);
         border-radius: 50px;
         transition: .2s;
+        
     }
 
     &__cont:hover {
@@ -31,6 +32,19 @@
                 fill: aqua;
             }
         }
+    }
+
+    @media screen and (max-width: 605px) {
+        &__contacts {
+            align-items: center;
+        }
+
+        &__cont {
+            width: 280px;
+            gap: 60px;
+        }
+
+       
     }
   
 }

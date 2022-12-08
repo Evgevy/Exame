@@ -41,5 +41,15 @@
             background: none;
         }
     }
+
+    @media screen and (max-width: 605px) {
+        &__title {
+            text-align: center;
+        }
+
+        &__items {
+            justify-content: center;
+        }
+    }
   
 }

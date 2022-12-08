@@ -1,0 +1,7 @@
+mixin status(cl,title)
+  div(class=`${cl}__status`).status
+    .status__titles
+      h2.status__title=title 
+      .status__line
+      .status__arrow
+        include img/arrow-down.svg 
