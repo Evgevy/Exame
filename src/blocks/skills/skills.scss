@@ -1,3 +1,8 @@
+@property --p {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
 .skills {
     &__content {
         max-width: 286px;
@@ -5,12 +10,13 @@
     }
 
     &__skills {
-        padding: 21px 30px 15px;
+        padding: 17px 26px 8px 32px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 10px;
-        
+        margin-bottom: 10px;
+       
     }
 
     &__skill {
@@ -26,7 +32,7 @@
         
         --c: #DE0F16;
         --b: 3px;
-        --w: 40px;
+        --w: 45px;
         width: var(--w);
         aspect-ratio: 1;
         position: relative;
@@ -52,8 +58,8 @@
     .pie:before {
         inset: 0;
         background: radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
-        //-webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-        mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+        -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+         mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
     }
 
     .pie:after {
@@ -90,7 +96,7 @@
     &__text {
         font-family: 'Roboto';
         font-size: px-to-em(11);
-        line-height: 120%;
+        line-height: 140%;
         text-transform: capitalize;
         color: #847D7D;
         text-align: left;

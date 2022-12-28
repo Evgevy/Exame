@@ -1,39 +1,41 @@
-mixin lang(cl)
-  div(class=`${cl ? cl + '__lang' : ''}`).lang
+mixin lang()
+  .lang
     .lang__lang 
-      h2.lang__title Languages
+      h2.lang__title Владение языками
       .lang__items 
-        .lang__languages english
-        .lang__rating
-        .lang__rating
-        .lang__rating
-        .lang__rating
-        .lang__rating
+        .lang__languages Русский
+        -var n = 0
+        while n < 5 
+          .lang__rating= n++
       .lang__items 
-        .lang__languages russian
-        .lang__rating
-        .lang__rating
-        .lang__rating
-        .lang__rating
-        .lang__rating 
-      .lang__items 
+        .lang__languages Английский
+        -var n = 0
+        while n < 3
+          .lang__rating= n++
+        -var c = 0
+        while c < 2
+          .lang__rating.lang__rating--clear= c++
+    //  .lang__items 
         .lang__languages french
-        .lang__rating
-        .lang__rating
-        .lang__rating
-        .lang__rating
-        .lang__rating.lang__rating--clear 
+        -var n = 0
+        while n < 4
+          .lang__rating= n++ 
+        -var c = 0
+        while c < 1
+          .lang__rating.lang__rating--clear= c++
       .lang__items 
         .lang__languages italian
-        .lang__rating 
-        .lang__rating
-        .lang__rating
-        .lang__rating.lang__rating--clear 
-        .lang__rating.lang__rating--clear
+        -var n = 0
+        while n < 3
+          .lang__rating= n++
+        -var c = 0
+        while c < 2
+          .lang__rating.lang__rating--clear= c++
       .lang__items 
         .lang__languages german
-        .lang__rating 
-        .lang__rating
-        .lang__rating.lang__rating--clear
-        .lang__rating.lang__rating--clear
-        .lang__rating.lang__rating--clear
+        -var n = 0
+        while n < 2
+          .lang__rating= n++
+        -var c = 0
+        while c < 3
+          .lang__rating.lang__rating--clear= c++

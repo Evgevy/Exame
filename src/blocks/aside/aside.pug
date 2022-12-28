@@ -1,8 +1,8 @@
-mixin aside(cl)
-  aside(class=`${cl ? cl + '__aside' : ''}`).aside
+mixin aside()
+  aside.aside
     .aside__content
       .aside__education
-        +status('aside','Education')
+        +status('Образование')
         .aside__examp
           h3.aside__title master in user experience design (2012) 
           p.aside__text ABC University
@@ -11,7 +11,7 @@ mixin aside(cl)
           p.aside__text XYZ University
           p.aside__info Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
       .aside__experiens
-        +status('aside','Experience')
+        +status('Опыт')
         .aside__examp 
           h3.aside__title Black hawk studio 
           p.aside__text Senior uX Designer

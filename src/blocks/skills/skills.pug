@@ -1,25 +1,30 @@
-mixin skills(cl)
-  aside(class=`${cl ? cl + '__skills' : ''}`).skills
+mixin skills()
+  aside.skills
     .skills__content
-      +status('skills','My Skills')
+      +status('Навыки')
       .skills__skills
         .skills__skill 
           .pie.animate.no-round(style="--p: 80;")
             .skills__image
-              include img/photoshop.svg
-          p.skills__text Adobe Photoshop
+              include img/html.svg
+          p.skills__text HTML 5
         .skills__skill
-          .pie.animate.no-round(style="--p: 68;")
+          .pie.animate.no-round(style="--p: 50;")
             .skills__image
-              include img/adillustrator.svg
-          p.skills__text Adobe Illustrator
+              include img/css.svg
+          p.skills__text CSS 3
         .skills__skill 
           .pie.animate.no-round(style="--p: 65;")
             .skills__image
-              img(src="img/indesign.png")
-          p.skills__text Adobe InDesign
+              include img/js.svg
+          p.skills__text Java Script
         .skills__skill 
           .pie.animate.no-round(style="--p: 59;")
             .skills__image
-              img(src="img/XD.png")
-          p.skills__text Adobe XD
+              include img/figma.svg
+          p.skills__text Figma
+        .skills__skill 
+          .pie.animate.no-round(style="--p: 35;")
+            .skills__image
+              include img/react.svg
+          p.skills__text React

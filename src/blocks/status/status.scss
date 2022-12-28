@@ -2,6 +2,7 @@
     &__titles {
         display: flex;
         align-items: center;
+        
     }
 
     &__title {
@@ -9,8 +10,8 @@
         align-items: center;
         justify-content: center;
         font-family: 'Roboto';
-        font-weight: 700;
-        font-size: px-to-em(16);
+        font-weight: 500;
+        font-size: px-to-em(15);
         line-height: 118%;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -22,7 +23,7 @@
     }
 
     &__line {
-        min-width: 135px;
+        min-width: 145px;
         background: #DE0F16;
         height: 2px;
     }

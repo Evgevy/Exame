@@ -1,16 +1,23 @@
-mixin main(cl)
-  main(class=`${cl ? cl + '__basic' : ''}`).basic
+mixin main()
+  main.basic
     .basic__content
       .basic__burger 
         .basic__line 
         .basic__line 
         .basic__line
       .basic__info
-        h1.basic__name Your Name
-        .basic__prof ui/ux designer
+        h1.basic__name ЕВГЕНИЙ ДУДУШЕВ
+        p.basic__prof HTML-Верстальщик
       .basic__about
-        img().basic__image
-        h2.basic__titleone about me
-        p.basic__textone Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        img(src="img/foto.jpg" alt="Фотопортрет").basic__image
+        h2.basic__title Обо мне:
+        p.basic__text Адаптивная верстка
+        p.basic__text Кроссбраузерная верстка
+        p.basic__text Использование jQuery
+        p.basic__text Применение шаблонизатора Pug
+        p.basic__text Верстка по методологии БЭМ
+        p.basic__text Применение препроцессора SCSS
+        p.basic__text Взаимодействие с Figma 
+        p.basic__text Применение Git
       +contacts
       +lang

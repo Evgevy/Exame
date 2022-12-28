@@ -4,19 +4,24 @@
         max-width: 328px;
         width: 100%;
         margin: 0 auto;
-        padding: 22px 28px 20px 14px;
+        padding: 24px 0px 0 12px;
         background: #FFFFFF;
         border-radius: 5px;
+    }
+
+    &__education,
+    &__experiens {
+        padding-right: 30px;
     }
 
     &__title {
         font-family: 'Roboto';
         font-weight: 700;
         font-size: px-to-em(15);
-        line-height: 115%;
+        line-height: 110%;
         text-transform: capitalize;
         color: #000000;
-        margin-top: 10px;
+        margin-top: 9px;
     }
 
     &__text {
@@ -26,7 +31,7 @@
         line-height: 115%;
         text-transform: capitalize;
         color: #DE0F16;
-        margin: 5px 0;
+        
     }
 
     &__info {
@@ -35,11 +40,12 @@
         line-height: 114%;
         text-transform: capitalize;
         color: #847D7D;
-        
+        margin-top: 5px;
     }
 
     &__examp {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+       
     }
 
     @media screen and (max-width: 605px) {
@@ -55,6 +61,11 @@
             max-width: 450px;
             padding: 0 0 0 15px;
             position: relative;
+        }
+
+        &__education,
+        &__experiens {
+            padding-right: 0;
         }
 
         &__examp {

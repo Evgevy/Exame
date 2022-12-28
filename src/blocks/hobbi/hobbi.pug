@@ -1,7 +1,7 @@
-mixin hobbi(cl)
-  aside(class=`${cl ? cl + '__hobbi' : ''}`).hobbi
+mixin hobbi()
+  aside.hobbi
     .hobbi__content 
-      +status('hobbi','Hobbies')
+      +status('Работы')
       .hobbi__hobbis 
         .hobbi__hobbi 
           include img/books.svg
