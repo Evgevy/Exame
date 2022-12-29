@@ -31,8 +31,8 @@
     .pie {
         
         --c: #DE0F16;
-        --b: 3px;
-        --w: 45px;
+        --b: 4px;
+        --w: 48px;
         width: var(--w);
         aspect-ratio: 1;
         position: relative;
@@ -84,18 +84,18 @@
     &__image {
         background-color: #F0ECEC;
         border-radius: 50%;
-        width: 33px;
-        height: 33px;
+        width: 35px;
+        height: 35px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+        padding: 5px 0;
     }
 
     &__text {
         font-family: 'Roboto';
-        font-size: px-to-em(11);
+        font-size: px-to-em(12);
         line-height: 140%;
         text-transform: capitalize;
         color: #847D7D;

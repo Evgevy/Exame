@@ -19,7 +19,6 @@
         font-weight: 700;
         font-size: px-to-em(15);
         line-height: 110%;
-        text-transform: capitalize;
         color: #000000;
         margin-top: 9px;
     }
@@ -29,7 +28,6 @@
         font-weight: 600;
         font-size: px-to-em(14);
         line-height: 115%;
-        text-transform: capitalize;
         color: #DE0F16;
         
     }
@@ -38,7 +36,6 @@
         font-family: 'Roboto';
         font-size: px-to-em(15);
         line-height: 114%;
-        text-transform: capitalize;
         color: #847D7D;
         margin-top: 5px;
     }
@@ -53,12 +50,12 @@
         &--open {
             display: block;
             position: absolute;
-            top: 11%;
+            top: 12%;
             width: 94%;
         }
         
         &__content {
-            max-width: 450px;
+            max-width: 420px;
             padding: 0 0 0 15px;
             position: relative;
         }
@@ -74,6 +71,12 @@
                 display: block;
                 margin-top: 10px;
             }
+        }
+    }
+
+    @media screen and (max-width: 452px) {
+        &--open {
+            top: 16%;
         }
     }
 }
