@@ -5,52 +5,27 @@
     }
 
     &__hobbis {
-        padding: 15px 0;
-        margin-left: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: default;
+        padding: 15px 0 15px 15px;
+    }
+
+    &__list {
+        list-style: none;
        
     }
 
-    &__hobbi {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: .2s;
-       
-    }
-
-    &__text {
+    &__link {
         font-family: 'Roboto';
-        font-size: px-to-em(11);
+        font-weight: 700;
+        font-size: px-to-em(15);
         line-height: 115%;
-        text-transform: capitalize;
-        color: #847D7D;
-        margin-top: 6px;
-        text-align: center;
-       
+        color: #000000;
     }
 
-    &__hobbi:hover,
-    &__text:hover {
-        transform: scale(1.5);
-        color: plum;
-        svg {
-            path {
-                fill: plum;
-            }
-        }
-    }
-
-    @media screen and (max-width: 605px) {
+    @media screen and (max-width: 626px) {
         &__hobbis {
             display: none;
             &--open {
-                display: flex;
-                padding: 10px 10px 10px 0;
-                margin-left: 0;
+                display: block;
             }
         }
 

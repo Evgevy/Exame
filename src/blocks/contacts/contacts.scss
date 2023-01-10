@@ -10,10 +10,10 @@
         display: flex;
         text-decoration: none;
         align-items: center;
-        padding: 10px 15px;
+        padding: 10px;
         gap: 15px;
         font-family: 'Roboto';
-        font-size: px-to-em(15);
+        font-size: px-to-em(14);
         line-height: 114%;
         color: #FFFFFF;
         background: rgba(255, 255, 255, 0.2);
@@ -32,14 +32,14 @@
         }
     }
 
-    @media screen and (max-width: 605px) {
+    @media screen and (max-width: 626px) {
         &__contacts {
             align-items: center;
         }
 
         &__cont {
             width: 280px;
-            gap: 60px;
+            gap: 30px;
         }
 
        

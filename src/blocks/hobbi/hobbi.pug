@@ -3,15 +3,14 @@ mixin hobbi()
     .hobbi__content 
       +status('Работы')
       .hobbi__hobbis 
-        .hobbi__hobbi 
-          include img/books.svg
-          p.hobbi__text Reading Books
-        .hobbi__hobbi 
-          include img/ball.svg
-          p.hobbi__text Basket Ball
-        .hobbi__hobbi 
-          include img/men.svg
-          p.hobbi__text Hiking
-        .hobbi__hobbi 
-          include img/music.svg
-          p.hobbi__text Listen Music
+        ul.hobbi__list
+          li.hobbi__item 
+            a(href="https://evgevy.github.io/Resume/" target="_blank").hobbi__link Визитка 
+            |&ensp;(
+            a(href="https://github.com/Evgevy/Exame" target="_blank").hobbi__link GitHub
+            |) 
+          li.hobbi__item 
+            a(href="https://evgevy.github.io/site-coffee/" target="_blank").hobbi__link Сайт кофе
+            |&ensp;(
+            a(href="https://github.com/Evgevy/Test-cooffee" target="_blank").hobbi__link GitHub
+            |) 

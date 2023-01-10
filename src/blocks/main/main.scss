@@ -1,7 +1,7 @@
 .basic {
     
     &__content {
-        max-width: 250px;
+        max-width: 260px;
         width: 100%;
         padding: 19px 0 13px;
         background: rgba(255, 255, 255, 0.2);
@@ -84,7 +84,7 @@
         display: none;
     }
 
-    @media screen and (max-width: 605px) {
+    @media screen and (max-width: 626px) {
        
         &__content {
             max-width: 450px;
@@ -136,5 +136,4 @@
 
     }
 
-   
 }

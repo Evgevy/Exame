@@ -45,7 +45,7 @@
        
     }
 
-    @media screen and (max-width: 605px) {
+    @media screen and (max-width: 626px) {
         display: none;
         &--open {
             display: block;
@@ -55,7 +55,7 @@
         }
         
         &__content {
-            max-width: 420px;
+            max-width: 435px;
             padding: 0 0 0 15px;
             position: relative;
         }
@@ -74,7 +74,7 @@
         }
     }
 
-    @media screen and (max-width: 452px) {
+    @media screen and (max-width: 468px) {
         &--open {
             top: 16%;
         }
