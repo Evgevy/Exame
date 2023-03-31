@@ -13,13 +13,19 @@
         padding: 10px;
         gap: 15px;
         font-family: 'Roboto';
-        font-size: px-to-em(14);
+        font-size: px-to-em(15);
         line-height: 114%;
         color: #FFFFFF;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 50px;
         transition: .2s;
-        
+        svg {
+            width: 19px;
+            height: 19px;
+            path {
+                fill: #F8F8F8;
+            }
+        }
     }
 
     &__cont:hover {

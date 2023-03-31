@@ -1,7 +1,7 @@
 .basic {
     
     &__content {
-        max-width: 260px;
+        max-width: 290px;
         width: 100%;
         padding: 19px 0 13px;
         background: rgba(255, 255, 255, 0.2);
@@ -54,7 +54,7 @@
     &__title {
         font-family: 'Roboto';
         font-weight: 500;
-        font-size: px-to-em(15);
+        font-size: px-to-em(17);
         line-height: 110%;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -63,7 +63,7 @@
 
     &__text {
         font-family: 'Roboto';
-        font-size: px-to-em(14);
+        font-size: px-to-em(16);
         line-height: 113%;
         color: #FFFFFF;
         margin-top: 5px;
